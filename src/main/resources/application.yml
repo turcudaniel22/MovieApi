@@ -1,25 +1,27 @@
 spring:
   jpa:
-    database: POSTGRESQL
-    show-sql: true
+    database: POSTGRESQL  # Specifies the type of database to be used (PostgreSQL).
+    show-sql: true  # Enables SQL statement logging to the console for debugging purposes.
     hibernate:
-      ddl-auto: update
+      ddl-auto: update  # Automatically updates the database schema on application startup.
 
   servlet:
     multipart:
-      max-file-size: 500MB
-      max-request-size: 500MB
+      max-file-size: 500MB  # Maximum size of a single uploaded file.
+      max-request-size: 500MB  # Maximum size of the entire multipart request.
+
   datasource:
-    driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/postgres
-    username: postgres
-    password: admin
+    driverClassName: org.postgresql.Driver  # Specifies the PostgreSQL JDBC driver.
+    url: jdbc:postgresql://localhost:5432/postgres  # JDBC URL for connecting to the PostgreSQL database.
+    username: postgres  # Database username.
+    password: admin  # Database password.
+
   sql:
     init:
-      platform: postgres
+      platform: postgres  # Specifies the SQL platform for initializing the database, here it's PostgreSQL.
 
 project:
-  poster: /posters
+  poster: /posters  # Directory path where uploaded poster images will be stored.
 
 base:
-  url: "http://localhost:8080"
+  url: "http://localhost:8080"  # Base URL for your application, used for constructing URLs in responses.
