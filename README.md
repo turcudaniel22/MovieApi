@@ -66,23 +66,24 @@ This is a full-stack Movie Management application with a backend built using Spr
    ```bash  
    git clone <repository-url>  
    cd backend  
-Set Up Your PostgreSQL Database:
-Create a new database (e.g., movie_management).
-Update the database configuration in src/main/resources/application.yml:
+#Set Up Your PostgreSQL Database:
+#Create a new database (e.g., movie_management).
+#Update the database configuration in src/main/resources/application.yml:
 spring:  
   datasource:  
     url: jdbc:postgresql://localhost:5432/movie_management  
     username: your_username  
     password: your_password  
-Build the Project:
+#Build the Project:
 mvn clean install  
 Run the Application:
 mvn spring-boot:run  
-The application will start on http://localhost:8080.
+#The application will start on http://localhost:8080.
 🔗 Backend API Endpoints
 
-Movies
-🎬 Get All Movies
+#Movies
+
+#🎬 Get All Movies
 
 Method: GET
 Endpoint: /api/v1/movie/all
