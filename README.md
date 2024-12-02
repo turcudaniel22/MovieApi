@@ -1,110 +1,111 @@
-# **🎥 Movie Management Application**  
-[![Java](https://img.shields.io/badge/Java-17%2B-blue?logo=java)](https://www.oracle.com/java/)  
-[![Spring Boot](https://img.shields.io/badge/Spring_Boot-2.7-green?logo=springboot)](https://spring.io/projects/spring-boot)  
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14-blue?logo=postgresql)](https://www.postgresql.org/)  
-[![React](https://img.shields.io/badge/React-18-blue?logo=react)](https://reactjs.org/)  
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.3-blue?logo=tailwindcss)](https://tailwindcss.com/)  
-[![MIT License](https://img.shields.io/badge/License-MIT-yellow?logo=opensourceinitiative)](LICENSE)  
+# 🚀 **Spring Boot MovieAPI Backend**
 
-🚀 Spring Boot MovieAPI Backend
+![Java](https://img.shields.io/badge/Java-17-blue)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.5.6-brightgreen)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-blue)
+![License](https://img.shields.io/badge/License-MIT-yellowgreen)
+![Maven](https://img.shields.io/badge/Maven-3.8.1-orange)
+![Issues](https://img.shields.io/github/issues/Vikashkatiyar/Movie_Api_Backend?color=yellow)
 
 The Spring Boot MovieAPI Backend is a powerful Java 17 application crafted to manage movie data efficiently. It prioritizes performance, security, and modularity, incorporating features like file handling, pagination, JWT authentication, and a three-layered architecture. Explore a seamless movie data experience with this backend! 🎥🍿
 
-🚀 Technology Used:
+---
 
-☕ Java
-🍃 Spring Boot
-🌐 Spring MVC
-🛢️ Spring Data JPA
-📑 Pagination and Sorting
-📁 File Handling
-🔐 JWT Authentication
-🐬 MySQL Database
-🌟 Key Features
+## 🌐 **Technology Used**
 
-File Handling:
+- ☕ **Java 17**
+- 🍃 **Spring Boot**
+- 🌐 **Spring MVC**
+- 🛢️ **Spring Data JPA**
+- 📑 **Pagination and Sorting**
+- 📁 **File Handling**
+- 🔐 **JWT Authentication**
+- 🐬 **MySQL Database**
 
-📁 Seamless media storage for efficient retrieval.
-🖼️ Manages images and other movie-related assets.
-Pagination:
+---
 
-🔍 Enhances data presentation.
-🚀 Optimizes resource usage.
-📑 Retrieves data in manageable chunks for improved performance.
-JWT Authentication:
+## 🌟 **Key Features**
 
-🔐 Prioritizes security.
-🔑 Implements JSON Web Token (JWT) authentication.
-🛡️ Ensures only authorized users access and interact with sensitive movie data.
-Three-Layered Architecture:
+### **File Handling**
+- 📁 Seamless media storage for efficient retrieval.
+- 🖼️ Manages images and other movie-related assets.
 
-🏗️ Modular codebase for maintainability and scalability.
-🎯 Separation into presentation, business logic, and data access layers.
-🔍 Facilitates easier debugging, testing, and future enhancements.
-🚀 MovieAPI Endpoints
+### **Pagination**
+- 🔍 Enhances data presentation.
+- 🚀 Optimizes resource usage.
+- 📑 Retrieves data in manageable chunks for improved performance.
 
-🔗 Add Movie:
+### **JWT Authentication**
+- 🔐 Prioritizes security.
+- 🔑 Implements JSON Web Token (JWT) authentication.
+- 🛡️ Ensures only authorized users access and interact with sensitive movie data.
 
-POST http://localhost:8080/api/v1/movie/add-movie
-🔍 Get All Movies:
+### **Three-Layered Architecture**
+- 🏗️ Modular codebase for maintainability and scalability.
+- 🎯 Separation into presentation, business logic, and data access layers.
+- 🔍 Facilitates easier debugging, testing, and future enhancements.
 
-GET http://localhost:8080/api/v1/movie/all
-🔍 Get Movie by ID:
+---
 
-GET http://localhost:8080/api/v1/movie/1
-📁 Get Profile Picture:
+## 🚀 **MovieAPI Endpoints**
 
-GET http://localhost:8080/file/profile-pic
-🔄 Update Movie by ID:
+### **🔗 Add Movie**
+- **Method**: POST  
+- **Endpoint**: `http://localhost:8080/api/v1/movie/add-movie`
 
-PUT http://localhost:8080/api/v1/movie/update/1
-❌ Delete Movie by ID:
+### **🔍 Get All Movies**
+- **Method**: GET  
+- **Endpoint**: `http://localhost:8080/api/v1/movie/all`
 
-DELETE http://localhost:8080/api/v1/movie/delete/2
-📑 Get Movies with Pagination:
+### **🔍 Get Movie by ID**
+- **Method**: GET  
+- **Endpoint**: `http://localhost:8080/api/v1/movie/{id}`
 
-GET http://localhost:8080/api/v1/movie/allMoviesPage?pageNumber=0&pageSize=2
-📑 Get Movies with Sorting:
+### **📁 Get Profile Picture**
+- **Method**: GET  
+- **Endpoint**: `http://localhost:8080/file/profile-pic`
 
-GET http://localhost:8080/api/v1/movie/allMoviesPageSort?sortBy=title
-📝 User Registration:
+### **🔄 Update Movie by ID**
+- **Method**: PUT  
+- **Endpoint**: `http://localhost:8080/api/v1/movie/update/{id}`
 
-POST http://localhost:8080/api/v1/auth/register
-🔒 User Login:
+### **❌ Delete Movie by ID**
+- **Method**: DELETE  
+- **Endpoint**: `http://localhost:8080/api/v1/movie/delete/{id}`
 
-POST http://localhost:8080/api/v1/auth/login
-🚀 Cloning the Project
+### **📑 Get Movies with Pagination**
+- **Method**: GET  
+- **Endpoint**: `http://localhost:8080/api/v1/movie/allMoviesPage?pageNumber=0&pageSize=2`
+
+### **📑 Get Movies with Sorting**
+- **Method**: GET  
+- **Endpoint**: `http://localhost:8080/api/v1/movie/allMoviesPageSort?sortBy=title`
+
+### **📝 User Registration**
+- **Method**: POST  
+- **Endpoint**: `http://localhost:8080/api/v1/auth/register`
+
+### **🔒 User Login**
+- **Method**: POST  
+- **Endpoint**: `http://localhost:8080/api/v1/auth/login`
+
+---
+
+## 🚀 **Cloning the Project**
 
 To kickstart your journey with the MovieAPI project, follow these simple steps:
 
-Clone the Repository:
 
-git clone https://github.com/Vikashkatiyar/Movie_Api_Backend.git
-Navigate to the Project Directory:
+🌍 Access the API Endpoints
 
-cd Movie_Api_Backend
-Configure Application Properties:
+Once the application is running, you can explore the MovieAPI by accessing the defined endpoints.
 
-Open src/main/resources/application.properties.
-Modify the database connection details to match your MySQL setup.
-Create MySQL Database:
+🤝 Contributing
 
-Execute the SQL script provided in src/main/resources/sql-scripts to set up the necessary database tables.
-mysql -u your_username -p < create_database.sql
-Build and Run the Application:
 
-Using Maven:
-./mvnw clean install
-./mvnw spring-boot:run
-Access the API Endpoints:
-
-Once the application is running, explore the MovieAPI by accessing the defined endpoints.
-Now you're all set! Dive into the MovieAPI project, manage movie-related data effortlessly, and feel free to contribute or report issues. Happy coding! 🎬🍿
+This project is licensed under the MIT License. Feel free to use, modify, and distribute this project as needed.
 
 🌟 Project Author
 
 Daniel
-
 📧 Email: turcudanieli22@gmail.com
-
-Feel free to reach out to the author for any inquiries, feedback, or collaboration opportunities related to the MovieAPI project. Your input is valuable! 🚀
