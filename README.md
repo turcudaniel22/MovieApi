@@ -6,121 +6,105 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.3-blue?logo=tailwindcss)](https://tailwindcss.com/)  
 [![MIT License](https://img.shields.io/badge/License-MIT-yellow?logo=opensourceinitiative)](LICENSE)  
 
-This is a full-stack Movie Management application with a backend built using Spring Boot and a frontend developed with React. The application allows users to manage movies, including adding, searching, and viewing movie details.
+🚀 Spring Boot MovieAPI Backend
 
----
+The Spring Boot MovieAPI Backend is a powerful Java 17 application crafted to manage movie data efficiently. It prioritizes performance, security, and modularity, incorporating features like file handling, pagination, JWT authentication, and a three-layered architecture. Explore a seamless movie data experience with this backend! 🎥🍿
 
-## **🗂️ Table of Contents**
-1. [✨ Features](#-features)  
-2. [🛠️ Technologies Used](#-technologies-used)  
-3. [📋 Prerequisites](#-prerequisites)  
-4. [⚙️ Backend Installation](#️-backend-installation)  
-5. [🛠️ Backend Configuration](#-backend-configuration)  
-6. [🔗 Backend API Endpoints](#-backend-api-endpoints)  
-7. [💻 Frontend Installation](#-frontend-installation)  
-8. [🚀 Running the Application](#-running-the-application)  
-9. [🤝 Contributing](#-contributing)  
-10. [📄 License](#-license)  
+🚀 Technology Used:
 
----
+☕ Java
+🍃 Spring Boot
+🌐 Spring MVC
+🛢️ Spring Data JPA
+📑 Pagination and Sorting
+📁 File Handling
+🔐 JWT Authentication
+🐬 MySQL Database
+🌟 Key Features
 
-## **✨ Features**  
-- **🔒 User Authentication**: Login to manage movies.  
-- **🔎 Search Functionality**: Search movies by genre, release year, or actor.  
-- **📱 Responsive Design**: Works well on desktop and mobile devices.  
-- **🌐 RESTful API**: Efficient backend service for managing movie data.  
+File Handling:
 
----
+📁 Seamless media storage for efficient retrieval.
+🖼️ Manages images and other movie-related assets.
+Pagination:
 
-## **🛠️ Technologies Used**  
+🔍 Enhances data presentation.
+🚀 Optimizes resource usage.
+📑 Retrieves data in manageable chunks for improved performance.
+JWT Authentication:
 
-### **Backend**  
-- [![Java](https://img.shields.io/badge/Java-17%2B-blue?logo=java)](https://www.oracle.com/java/)  
-- [![Spring Boot](https://img.shields.io/badge/Spring_Boot-2.7-green?logo=springboot)](https://spring.io/projects/spring-boot)  
-- **Spring Data JPA**: For data access and management  
-- [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14-blue?logo=postgresql)](https://www.postgresql.org/)  
+🔐 Prioritizes security.
+🔑 Implements JSON Web Token (JWT) authentication.
+🛡️ Ensures only authorized users access and interact with sensitive movie data.
+Three-Layered Architecture:
 
-### **Frontend**  
-- [![React](https://img.shields.io/badge/React-18-blue?logo=react)](https://reactjs.org/)  
-- [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.3-blue?logo=tailwindcss)](https://tailwindcss.com/)  
-- **React Router**: For handling navigation  
+🏗️ Modular codebase for maintainability and scalability.
+🎯 Separation into presentation, business logic, and data access layers.
+🔍 Facilitates easier debugging, testing, and future enhancements.
+🚀 MovieAPI Endpoints
 
----
+🔗 Add Movie:
 
-## **📋 Prerequisites**  
+POST http://localhost:8080/api/v1/movie/add-movie
+🔍 Get All Movies:
 
-### **Backend**  
-- [![Java](https://img.shields.io/badge/Java-17%2B-blue?logo=java)](https://www.oracle.com/java/)  
-- [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14-blue?logo=postgresql)](https://www.postgresql.org/)  
-- [![Maven](https://img.shields.io/badge/Maven-3.9-orange?logo=apachemaven)](https://maven.apache.org/)  
+GET http://localhost:8080/api/v1/movie/all
+🔍 Get Movie by ID:
 
-### **Frontend**  
-- [![Node.js](https://img.shields.io/badge/Node.js-18+-blue?logo=nodedotjs)](https://nodejs.org/)  
-- **Create React App** (optional, if you want to create a new project)  
+GET http://localhost:8080/api/v1/movie/1
+📁 Get Profile Picture:
 
----
+GET http://localhost:8080/file/profile-pic
+🔄 Update Movie by ID:
 
-## **⚙️ Backend Installation**  
+PUT http://localhost:8080/api/v1/movie/update/1
+❌ Delete Movie by ID:
 
-1. **Clone the Repository**:  
-   ```bash  
-   git clone <repository-url>  
-   cd backend  
-#Set Up Your PostgreSQL Database:
-#Create a new database (e.g., movie_management).
-#Update the database configuration in src/main/resources/application.yml:
-spring:  
-  datasource:  
-    url: jdbc:postgresql://localhost:5432/movie_management  
-    username: your_username  
-    password: your_password  
-#Build the Project:
-mvn clean install  
-Run the Application:
-mvn spring-boot:run  
-#The application will start on http://localhost:8080.
-🔗 Backend API Endpoints
+DELETE http://localhost:8080/api/v1/movie/delete/2
+📑 Get Movies with Pagination:
 
-#Movies
+GET http://localhost:8080/api/v1/movie/allMoviesPage?pageNumber=0&pageSize=2
+📑 Get Movies with Sorting:
 
-#🎬 Get All Movies
+GET http://localhost:8080/api/v1/movie/allMoviesPageSort?sortBy=title
+📝 User Registration:
 
-Method: GET
-Endpoint: /api/v1/movie/all
-Description: Fetches a list of all movies.
-🔍 Search Movies
+POST http://localhost:8080/api/v1/auth/register
+🔒 User Login:
 
-Method: POST
-Endpoint: /api/v1/movie/search
-Description: Searches for movies based on category and keyword.
-Request Body:
-{  
-  "category": "genre",  
-  "keyword": "Action"  
-}  
-💻 Frontend Installation
+POST http://localhost:8080/api/v1/auth/login
+🚀 Cloning the Project
 
-Navigate to Frontend Directory:
-cd frontend  
-Install Dependencies:
-npm install  
-Start the Development Server:
-npm start  
-The frontend application will run on http://localhost:3000.
-🚀 Running the Application
+To kickstart your journey with the MovieAPI project, follow these simple steps:
 
-Backend: Ensure PostgreSQL is running and start the backend server using Maven.
-Frontend: Start the React development server with npm start.
-🤝 Contributing
+Clone the Repository:
 
-Contributions are welcome! Please follow these steps:
+git clone https://github.com/Vikashkatiyar/Movie_Api_Backend.git
+Navigate to the Project Directory:
 
-Fork the repository.
-Create a new branch: git checkout -b feature-branch-name.
-Commit your changes: git commit -m 'Add some feature'.
-Push to the branch: git push origin feature-branch-name.
-Submit a pull request.
-📄 License
+cd Movie_Api_Backend
+Configure Application Properties:
 
-This project is licensed under the MIT License. Feel free to use, modify, and distribute this project as needed.
+Open src/main/resources/application.properties.
+Modify the database connection details to match your MySQL setup.
+Create MySQL Database:
 
+Execute the SQL script provided in src/main/resources/sql-scripts to set up the necessary database tables.
+mysql -u your_username -p < create_database.sql
+Build and Run the Application:
+
+Using Maven:
+./mvnw clean install
+./mvnw spring-boot:run
+Access the API Endpoints:
+
+Once the application is running, explore the MovieAPI by accessing the defined endpoints.
+Now you're all set! Dive into the MovieAPI project, manage movie-related data effortlessly, and feel free to contribute or report issues. Happy coding! 🎬🍿
+
+🌟 Project Author
+
+Daniel
+
+📧 Email: turcudanieli22@gmail.com
+
+Feel free to reach out to the author for any inquiries, feedback, or collaboration opportunities related to the MovieAPI project. Your input is valuable! 🚀
