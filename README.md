@@ -20,7 +20,7 @@ The Spring Boot MovieAPI Backend is a powerful Java 17 application crafted to ma
 - 📑 **Pagination and Sorting**
 - 📁 **File Handling**
 - 🔐 **JWT Authentication**
-- 🐬 **MySQL Database**
+- 🐬 **PostgressSql Database**
 
 ---
 
